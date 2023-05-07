@@ -2,7 +2,7 @@ FROM ubuntu
 
 EXPOSE 3000
 
-#COPY start.sh /
+COPY /home /home
 #RUN chmod +x
 
 CMD [ "/home/index.html" ]
