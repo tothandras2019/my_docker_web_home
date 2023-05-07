@@ -1,9 +1,8 @@
-FROM ubuntu
+FROM nginx
+
+COPY /home/index.html /home
 
 EXPOSE 3000
 
-COPY /home /home
-RUN chmod +x
-
-CMD [ "/home/index.html" ]
-# CMD [ "nginx", "-g", "daemon off;" ]a
+# CMD [ "/home/index.html" ]
+CMD [ "nginx", "-g", "daemon off;" ]
